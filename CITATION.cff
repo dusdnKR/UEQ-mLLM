@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "UEQ-mLLM: Agentic LLM Workflows for Personalized User Experience Questionnaire Generation"
+abstract: >-
+  Reference implementation of UEQ-mLLM, a four-agent LLM workflow that turns
+  real-time emotion and attention signals from the MIND multimodal dashboard
+  into personalized user experience questionnaires organized by the UX
+  honeycomb model.
+type: software
+license: MIT
+repository-code: "https://github.com/dusdnKR/UEQ-mLLM"
+authors:
+  - family-names: Kim
+    given-names: Yeonwoo
+    affiliation: Kyung Hee University
+    email: dusdn@khu.ac.kr
+  - family-names: Lee
+    given-names: Junhyeok
+    affiliation: Kyung Hee University
+  - family-names: Han
+    given-names: Ju Hyuk
+    affiliation: Kyung Hee University
+  - family-names: Kim
+    given-names: Minjae
+    affiliation: Kyung Hee University
+  - family-names: Lee
+    given-names: Howook
+    affiliation: Kyung Hee University
+  - family-names: Lee
+    given-names: Won Hee
+    affiliation: Kyung Hee University
+    email: whlee@khu.ac.kr
+preferred-citation:
+  type: conference-paper
+  title: "Agentic LLM Workflows for Personalized User Experience Questionnaire Generation"
+  authors:
+    - family-names: Kim
+      given-names: Yeonwoo
+      affiliation: Kyung Hee University
+    - family-names: Lee
+      given-names: Junhyeok
+      affiliation: Kyung Hee University
+    - family-names: Han
+      given-names: Ju Hyuk
+      affiliation: Kyung Hee University
+    - family-names: Kim
+      given-names: Minjae
+      affiliation: Kyung Hee University
+    - family-names: Lee
+      given-names: Howook
+      affiliation: Kyung Hee University
+    - family-names: Lee
+      given-names: Won Hee
+      affiliation: Kyung Hee University
+  collection-title: "2024 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)"
+  conference:
+    name: "2024 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)"
+    city: Danang
+    country: VN
+    date-start: "2024-11-03"
+    date-end: "2024-11-06"
+  publisher:
+    name: IEEE
+  year: 2024
+  start: 1
+  end: 4
+  doi: "10.1109/ICCE-Asia63397.2024.10773955"
+  isbn: "979-8-3315-3083-9"

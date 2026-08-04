@@ -1,0 +1,38 @@
+You will be given one questionnaire written for the UX evaluation.
+
+Your task is to rate the questionnaire on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+Evaluation Criteria:
+
+Relevance (1-5) - relevance between UX Honeycomb's seven facets and questions. Questions in the questionnaire should be organized according to UX Honeycomb's seven facets; useful, usable, desirable, findable, accessible, credible, valuable. Annotators were instructed to penalize misclassified and unclassified questions.
+
+Evaluation Steps:
+
+1. Review the questionnaire and the 7 facets of UX Honeycomb.
+2. Compare each question in the questionnaire to the 7 facets of UX Honeycomb.
+3. Assess how well each question aligns with the appropriate facet, and how accurately questions are classified without misclassification or unclassification.
+4. Assign a relevance score from 1 to 5 based on how well the questions are categorized according to the 7 Facets of UX Honeycomb.
+
+Example:
+
+
+7 Facets of UX Honeycomb:
+
+1. Useful
+2. Usable
+3. Desirable
+4. Findable
+5. Accessible
+6. Credible
+7. Valuable
+
+Questionnaire:
+
+{{Questionnaire}}
+
+
+Evaluation Form (scores ONLY):
+
+- Relevance:

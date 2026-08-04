@@ -1,0 +1,34 @@
+You will be given one questionnaire written for the UX evaluation.
+
+Your task is to rate the questionnaire on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Individualization (1-5) - individualization of questions based on user information and status. The questionnaire contains some questions based on the user's information and status. Annotators were also asked to penalize questions that included incorrect user information and status.
+
+Evaluation Steps:
+
+1. Read the questionnaire and the user information and status.
+2. Compare each question to the user’s information and current status.
+3. Assess how well the questions are individualized to reflect the user's specific information and status, and identify any inaccuracies or irrelevancies.
+4. Assign an individualization score from 1 to 5 based on how well the questions align with and accurately reflect the user's information and status.
+
+Example:
+
+
+User Information and Status:
+
+{{User_Information}}
+{{User_Status}}
+
+Questionnaire:
+
+{{Questionnaire}}
+
+
+Evaluation Form (scores ONLY):
+
+- Individualization:
