@@ -4,8 +4,6 @@
 
 **Agentic LLM Workflows for Personalized User Experience Questionnaire Generation**
 
-Reference implementation and experiment code for our IEEE ICCE-Asia 2024 paper.
-
 [![Paper](https://img.shields.io/badge/DOI-10.1109%2FICCE--Asia63397.2024.10773955-00629B?style=flat-square)](https://doi.org/10.1109/ICCE-Asia63397.2024.10773955)&nbsp;
 [![Conference](https://img.shields.io/badge/IEEE-ICCE--Asia%202024-0A66C2?style=flat-square)](https://ieeexplore.ieee.org/document/10773955)&nbsp;
 [![Model](https://img.shields.io/badge/Llama%203.1-8B%20Instruct-FF6F00?style=flat-square)](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)&nbsp;
