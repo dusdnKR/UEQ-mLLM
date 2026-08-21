@@ -18,15 +18,11 @@
 
 ## Overview
 
+[![MIND dashboard demo](assets/mind-demo-thumb.jpg)](https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4)
+
 UX questionnaires are usually static: every participant answers the same items, no matter what they were actually feeling or attending to while using the product. **UEQ-mLLM** replaces that fixed instrument with one generated per user, on the spot, from signals captured live during the session.
 
 Real-time facial-expression and EEG readings from the **MIND** dashboard become a compact description of the user's current state. Four specialized LLM agents then turn that description into a questionnaire: one writes questions targeted at the user's state, one covers the seven facets of the UX honeycomb, one merges them into a single coherent instrument, and one polishes the language.
-
-## Paper
-
-> **Y. Kim**, J. Lee, J. H. Han, M. Kim, H. Lee, and W. H. Lee, "Agentic LLM Workflows for Personalized User Experience Questionnaire Generation," in *2024 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)*, Danang, Vietnam, 2024, pp. 1–4, doi: [10.1109/ICCE-Asia63397.2024.10773955](https://doi.org/10.1109/ICCE-Asia63397.2024.10773955).
-
-Read the paper on [IEEE Xplore](https://ieeexplore.ieee.org/document/10773955).
 
 ## Method
 
@@ -126,8 +122,6 @@ See [`evaluation/README.md`](evaluation/README.md) for the criteria and the scor
 
 MIND supplies the emotion and attention percentages that drive LLM-1.
 
-[![MIND dashboard demo](assets/mind-demo-thumb.jpg)](https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4)
-
 1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It holds the KNN attention classifiers and scalers.
 2. Install dependencies from `mind/requirements.txt`. Some pins conflict with each other; installing the packages you actually import is more reliable than installing the file wholesale. `mind/requirements-streamdiffusion.txt` covers the separate StreamDiffusion environment.
 3. From inside `mind/`, start the Flask backend — `python app.py` for live EEG through the Emotiv Lab Streaming Layer, or `python app_loaded.py` for prerecorded EEG.
@@ -137,10 +131,9 @@ Both processes run at once: Flask serves the streaming endpoints on port 5000 an
 
 ## Related work
 
-| | |
-|---|---|
-| **Predecessor** | H. Jo, J. Lee, H. W. Park, M. Kim, **Y. Kim**, and W. H. Lee, "Developing an Integrated Dashboard to Analyze Multimodal Data for User Experience Evaluation," *IEEE ICCE-Asia 2023*, pp. 1–4. — introduces the MIND dashboard in [`mind/`](mind/README.md). |
-| **Follow-up** | **Y. Kim**, M. J. Lee, and W. H. Lee, "EEG-Informed Adaptive User Experience Questionnaire Generation with Multi-Agent Large Language Models," *IEEE/IEIE ICCE-Asia 2025*, pp. 1–5. — extends this workflow to adapt questionnaires from EEG during the session. |
+H. Jo, J. Lee, H. W. Park, M. Kim, **Y. Kim**, and W. H. Lee, "Developing an Integrated Dashboard to Analyze Multimodal Data for User Experience Evaluation," *IEEE ICCE-Asia 2023*, pp. 1–4. — introduces the MIND dashboard in [`mind/`](mind/README.md).
+
+**Y. Kim**, M. J. Lee, and W. H. Lee, "EEG-Informed Adaptive User Experience Questionnaire Generation with Multi-Agent Large Language Models," *IEEE/IEIE ICCE-Asia 2025*, pp. 1–5. — extends this workflow to adapt questionnaires from EEG during the session.
 
 ## Acknowledgment
 
