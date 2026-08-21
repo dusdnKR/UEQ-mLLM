@@ -126,14 +126,14 @@ See [`evaluation/README.md`](evaluation/README.md) for the criteria and the scor
 
 MIND supplies the emotion and attention percentages that drive LLM-1.
 
-<video src="https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4" controls width="100%"></video>
+[![MIND dashboard demo](assets/mind-demo-thumb.jpg)](https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4)
 
-1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It holds the KNN attention classifiers and scalers, which are too large to version here.
+1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It holds the KNN attention classifiers and scalers.
 2. Install dependencies from `mind/requirements.txt`. Some pins conflict with each other; installing the packages you actually import is more reliable than installing the file wholesale. `mind/requirements-streamdiffusion.txt` covers the separate StreamDiffusion environment.
 3. From inside `mind/`, start the Flask backend — `python app.py` for live EEG through the Emotiv Lab Streaming Layer, or `python app_loaded.py` for prerecorded EEG.
 4. In a second shell, also from `mind/`, start the front end: `streamlit run dash.py`.
 
-Both processes run at once: Flask serves the streaming endpoints on port 5000 and Streamlit polls them. Run them from `mind/` — the modules resolve `models/`, `datas/`, and `utils/` relative to the working directory. Recorded EEG (`datas/*.mat`) is not included; `app_loaded.py` expects a `mind/datas/` folder you supply.
+Both processes run at once: Flask serves the streaming endpoints on port 5000 and Streamlit polls them. Run them from `mind/` — the modules resolve `models/`, `datas/`, and `utils/` relative to the working directory. For prerecorded EEG, place your recordings in `mind/datas/`.
 
 ## Related work
 

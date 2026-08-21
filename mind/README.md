@@ -2,7 +2,7 @@
 
 MIND is the web-based front end that captures the user signals UEQ-mLLM turns into questionnaires. It was introduced in our ICCE-Asia 2023 paper and extended for the 2024 work described in the [top-level README](../README.md).
 
-<video src="https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4" controls width="100%"></video>
+[![MIND dashboard demo](../assets/mind-demo-thumb.jpg)](https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4)
 
 ## Modules
 
@@ -30,7 +30,7 @@ The 2024 paper replaces the ControlNet-based image generator with [StreamDiffusi
 
 ## Setup
 
-1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It contains `saved_model*` (KNN attention classifiers) and `scaler_knn*.joblib`, which are too large to version here. `haarcascade_frontalface_alt.xml` is already included.
+1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It contains `saved_model*` (KNN attention classifiers) and `scaler_knn*.joblib`.
 2. Install from `requirements.txt`. Several pins conflict with one another, so installing the packages you actually import tends to work better than installing the file wholesale. `requirements-streamdiffusion.txt` covers the separate StreamDiffusion environment.
 3. Run the backend from **this** directory — the modules resolve `models/`, `datas/`, and `utils/` relative to the working directory:
    - live EEG (requires the Emotiv Lab Streaming Layer): `cd mind && python app.py`
@@ -39,4 +39,4 @@ The 2024 paper replaces the ControlNet-based image generator with [StreamDiffusi
 
 Flask serves on port 5000 and Streamlit polls those endpoints, so both processes need to be running.
 
-Recorded EEG files are not included in this repository. `app_loaded.py` reads `datas/eeg_record3.mat` with 14 channels at 128 Hz, laid out on the standard 10-20 montage.
+`app_loaded.py` reads recorded EEG from `datas/eeg_record3.mat` — 14 channels at 128 Hz, laid out on the standard 10-20 montage.
