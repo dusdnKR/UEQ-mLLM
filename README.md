@@ -18,7 +18,7 @@
 
 ## Overview
 
-[![MIND dashboard demo](assets/mind-demo-thumb.jpg)](https://raw.githubusercontent.com/dusdnKR/UEQ-mLLM/main/assets/mind-demo.mp4)
+![MIND dashboard demo](assets/mind-demo.gif)
 
 UX questionnaires are usually static: every participant answers the same items, no matter what they were actually feeling or attending to while using the product. **UEQ-mLLM** replaces that fixed instrument with one generated per user, on the spot, from signals captured live during the session.
 
