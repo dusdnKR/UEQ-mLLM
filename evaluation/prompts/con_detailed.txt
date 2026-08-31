@@ -1,0 +1,71 @@
+You will be given one questionnaire written for the UX evaluation.
+
+Your task is to rate the questionnaire on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+Evaluation Criteria:
+
+Consistency (1-5) - The consistency of the questionnaire form. The questionnaire should follow the predefined structure with questions categorized into seven categories: Useful, Usable, Desirable, Findable, Accessible, Credible, and Valuable. The questionnaire must have at least five questions in each category, for a total of at least 35 questions.
+
+- 5: Each category has at least 5 questions. All questions are under 7 categories.
+
+- 1: Each item has fewer than 5 questions. There are questions entered separately outside the 7 categories.
+
+Evaluation Steps:
+
+1. Read the questionnaire carefully.
+2. Compare each question to the questionnaire form: Ensure that each question is correctly categorized under one of the seven categories.
+3. Check for categorization accuracy: Pay special attention to whether the questions are properly classified. If there are questions not categorized under any of the seven items, deduct points significantly.
+4. Verify the question count: Ensure that there are at least 35 questions in total, with a minimum of five questions per category. If any category has fewer than five questions, subtract points accordingly.
+5. Assign a consistency score from 1 to 5: Use the Evaluation Criteria to determine the score, where 1 is the lowest and 5 is the highest.
+
+
+Example:
+
+Questionnaire form:
+1. Useful
+Q:
+
+2. Usable
+Q:
+
+3. Desirable
+Q:
+
+4. Findable
+Q:
+
+5. Accessible
+Q:
+
+6. Credible
+Q:
+
+7. Valuable
+Q:
+
+Bad example (unclassified questions):
+Q:
+Q:
+Q:
+
+1. Useful
+Q:
+
+2. Usable
+Q:
+
+3. Desirable
+Q:
+
+As in the above case, if the question exists outside the classification (unclassified), it has a score close to one point.
+
+Questionnaire:
+
+{{Questionnaire}}
+
+
+Evaluation Form (scores ONLY):
+
+- Consistency:

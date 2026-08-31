@@ -1,0 +1,26 @@
+You will be given one questionnaire written for the UX evaluation.
+
+Your task is to rate the questionnaire on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Fluency (1-3): the quality of the questionnaire in terms of grammar, spelling, punctuation, word choice, and sentence structure. In particular, make sure that the sentence follows the correct case notation.
+
+- 1: Poor. The questionnaire has many errors that make it hard to understand or sound unnatural.
+- 2: Fair. The questionnaire has some errors that affect the clarity or smoothness of the text, but the main points are still comprehensible.
+- 3: Good. The questionnaire has few or no errors and is easy to read and follow.
+
+
+Example:
+
+Questionnaire:
+
+{{Questionnaire}}
+
+
+Evaluation Form (scores ONLY):
+
+- Fluency (1-3):
