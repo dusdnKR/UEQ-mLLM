@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets — never commit API keys
+.env
+.env.*
+!.env.example
+*.key
+secrets.*
+
+# Model checkpoints and recorded signals (fetch separately, see README)
+mind/models/*
+!mind/models/haarcascade_frontalface_alt.xml
+mind/datas/
+*.mat
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.joblib
+*.engine
+
+# Experiment outputs — generated locally, not published
+results/
+
+# Runtime artifacts
+temp_input.png
+*.log
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
