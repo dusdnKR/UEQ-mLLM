@@ -73,7 +73,7 @@ UEQ-mLLM/
 │   ├── stream_diffusion_demo.py    # Standalone real-time image generation demo
 │   ├── templates/                  # Per-module streaming endpoints
 │   └── utils/wrapper.py            # StreamDiffusion wrapper
-└── assets/                         # Overview figure and demo video
+└── assets/                         # Overview figure
 ```
 
 ## Getting started
@@ -131,7 +131,7 @@ See [`evaluation/README.md`](evaluation/README.md) for the criteria and the scor
 
 MIND supplies the emotion and attention percentages that drive LLM-1.
 
-![MIND dashboard demo](assets/mind-demo.gif)
+https://github.com/user-attachments/assets/ee0ae027-76fb-4319-beea-7468cb196dc6
 
 1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It holds the KNN attention classifiers and scalers.
 2. Install dependencies from `mind/requirements.txt`. Some pins conflict with each other; installing the packages you actually import is more reliable than installing the file wholesale. `mind/requirements-streamdiffusion.txt` covers the separate StreamDiffusion environment.
