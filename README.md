@@ -4,9 +4,14 @@
 
 **Agentic LLM Workflows for Personalized User Experience Questionnaire Generation**
 
+[Yeonwoo Kim](https://github.com/dusdnKR), Junhyeok Lee, Ju Hyuk Han, Minjae Kim, Howook Lee, Won Hee Lee<br>
+Kyung Hee University
+
+*IEEE ICCE-Asia 2024*
+
 [![Paper](https://img.shields.io/badge/DOI-10.1109%2FICCE--Asia63397.2024.10773955-00629B?style=flat-square)](https://doi.org/10.1109/ICCE-Asia63397.2024.10773955)&nbsp;
 [![Conference](https://img.shields.io/badge/IEEE-ICCE--Asia%202024-0A66C2?style=flat-square)](https://ieeexplore.ieee.org/document/10773955)&nbsp;
-[![Model](https://img.shields.io/badge/Llama%203.1-8B%20Instruct-FF6F00?style=flat-square)](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)&nbsp;
+[![Model](https://img.shields.io/badge/Llama%203.1-8B%20Instruct-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)&nbsp;
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
@@ -18,11 +23,15 @@
 
 ## Overview
 
-![MIND dashboard demo](assets/mind-demo.gif)
-
 UX questionnaires are usually static: every participant answers the same items, no matter what they were actually feeling or attending to while using the product. **UEQ-mLLM** replaces that fixed instrument with one generated per user, on the spot, from signals captured live during the session.
 
-Real-time facial-expression and EEG readings from the **MIND** dashboard become a compact description of the user's current state. Four specialized LLM agents then turn that description into a questionnaire: one writes questions targeted at the user's state, one covers the seven facets of the UX honeycomb, one merges them into a single coherent instrument, and one polishes the language.
+Real-time facial-expression and EEG readings from the MIND dashboard become a compact description of the user's current state. Four specialized LLM agents then turn that description into a questionnaire: one writes questions targeted at the user's state, one covers the seven facets of the UX honeycomb, one merges them into a single coherent instrument, and one polishes the language.
+
+## Paper
+
+> **Y. Kim**, J. Lee, J. H. Han, M. Kim, H. Lee, and W. H. Lee, "Agentic LLM Workflows for Personalized User Experience Questionnaire Generation," in *2024 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)*, Danang, Vietnam, 2024, pp. 1–4, doi: [10.1109/ICCE-Asia63397.2024.10773955](https://doi.org/10.1109/ICCE-Asia63397.2024.10773955).
+
+Read the paper on [IEEE Xplore](https://ieeexplore.ieee.org/document/10773955).
 
 ## Method
 
@@ -122,6 +131,8 @@ See [`evaluation/README.md`](evaluation/README.md) for the criteria and the scor
 
 MIND supplies the emotion and attention percentages that drive LLM-1.
 
+![MIND dashboard demo](assets/mind-demo.gif)
+
 1. Download the `models/` folder from [Google Drive](https://drive.google.com/drive/folders/1djwUiAWDnatcuyIDgYtblJyOTAx_YTBW?usp=sharing) and merge it into `mind/models/`. It holds the KNN attention classifiers and scalers.
 2. Install dependencies from `mind/requirements.txt`. Some pins conflict with each other; installing the packages you actually import is more reliable than installing the file wholesale. `mind/requirements-streamdiffusion.txt` covers the separate StreamDiffusion environment.
 3. From inside `mind/`, start the Flask backend — `python app.py` for live EEG through the Emotiv Lab Streaming Layer, or `python app_loaded.py` for prerecorded EEG.
@@ -131,9 +142,10 @@ Both processes run at once: Flask serves the streaming endpoints on port 5000 an
 
 ## Related work
 
-H. Jo, J. Lee, H. W. Park, M. Kim, **Y. Kim**, and W. H. Lee, "Developing an Integrated Dashboard to Analyze Multimodal Data for User Experience Evaluation," *IEEE ICCE-Asia 2023*, pp. 1–4. — introduces the MIND dashboard in [`mind/`](mind/README.md).
-
-**Y. Kim**, M. J. Lee, and W. H. Lee, "EEG-Informed Adaptive User Experience Questionnaire Generation with Multi-Agent Large Language Models," *IEEE/IEIE ICCE-Asia 2025*, pp. 1–5. — extends this workflow to adapt questionnaires from EEG during the session.
+| | |
+|---|---|
+| **Predecessor** | H. Jo, J. Lee, H. W. Park, M. Kim, **Y. Kim**, and W. H. Lee, "Developing an Integrated Dashboard to Analyze Multimodal Data for User Experience Evaluation," *IEEE ICCE-Asia 2023*, pp. 1–4. — introduces the MIND dashboard in [`mind/`](mind/README.md). |
+| **Follow-up** | **Y. Kim**, M. J. Lee, and W. H. Lee, "EEG-Informed Adaptive User Experience Questionnaire Generation with Multi-Agent Large Language Models," *IEEE/IEIE ICCE-Asia 2025*, pp. 1–5. — extends this workflow to adapt questionnaires from EEG during the session. |
 
 ## Acknowledgment
 
