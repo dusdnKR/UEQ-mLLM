@@ -2,7 +2,7 @@
 
 MIND is the web-based front end that captures the user signals UEQ-mLLM turns into questionnaires. It was introduced in our ICCE-Asia 2023 paper and extended for the 2024 work described in the [top-level README](../README.md).
 
-https://github.com/user-attachments/assets/ee0ae027-76fb-4319-beea-7468cb196dc6
+![MIND dashboard demo](../assets/mind-demo.gif)
 
 ## Modules
 
